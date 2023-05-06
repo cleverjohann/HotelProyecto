@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+    <filter>
+        <filter-name>LoginServlet</filter-name>
+        <filter-class>com.example.LoginServlet</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginServlet</filter-name>
+        <url-pattern>/dashboard/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
